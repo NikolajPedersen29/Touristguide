@@ -47,8 +47,8 @@ public class TouristController {
 
     //update attraction
     @PostMapping("/update")
-    public ResponseEntity<TouristAttraction> updateAttraction(@RequestBody TouristAttraction attraction, @RequestParam String newName) {
-        TouristAttraction updatedAttraction = touristService.updateAttraction(attraction.getName(), newName, attraction.getDescription());
+    public ResponseEntity<TouristAttraction> updateAttraction(@RequestBody TouristAttraction attraction, @RequestParam String name) {
+        TouristAttraction updatedAttraction = touristService.updateAttraction(name, attraction.getName(), attraction.getDescription());
         if (updatedAttraction != null) {
             return new ResponseEntity<>(updatedAttraction, HttpStatus.OK);
         } else {
