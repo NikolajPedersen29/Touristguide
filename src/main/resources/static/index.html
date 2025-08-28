@@ -5,6 +5,11 @@
     <title>Touristguide</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    li {
+        display: inline;
+    }
+</style>
 <body>
 <header>
     <h1>Touristguide</h1>
@@ -12,22 +17,26 @@
 </header>
 
 <nav>
-    <a href="/attractions">Alle attraktioner</a> |
-    <a href="https://dinoffentligetransport.dk/">Guide til offentlig transport</a>
+    <ul>
+        <li><a href="/attractions">Alle attraktioner</a></li> |
+        <li></li><a href="https://dinoffentligetransport.dk/">Guide til offentlig transport</a></li>
+    </ul>
 </nav>
 
+<main>
 <figure class="attraction">
-    <img src="Tivoli.jpg" alt="Tivoli">
+    <img src="images/Tivoli.jpg" alt="Tivoli">
     <a href="/attractions/Tivoli">Tivoli</a>
 </figure>
 <figure class="attraction">
-    <img src="Den_lille_havfrue.jpg" alt="Den lille havfrue">
+    <img src="images/Den_lille_havfrue.jpg" alt="Den lille havfrue">
     <a href="/attractions/Den%20lille%20havfrue">Den lille havfrue</a>
 </figure>
 <figure class="attraction">
-    <img src="Rundetårn.jpg" alt="Rundetårn">
+    <img src="images/Rundetårn.jpg" alt="Rundetårn">
     <a href="/attractions/Rundetårn">Rundetårn</a>
 </figure>
+</main>
 
 <footer>
     <p>Kontakt: info@turistguide.dk</p>
