@@ -42,6 +42,42 @@ nav a:hover {
     color: #90e0ef;
 }
 
+.attractions-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.attraction {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attraction img {
+    width: 100%;           /* Fylder hele bredden af .attraction */
+    height: 200px;         /* Ens højde til alle billeder */
+    object-fit: cover;     /* Beholder billedets proportioner, beskærer om nødvendigt */
+    border-radius: 8px;
+    display: block;
+}
+
+.attraction a {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #023e8a;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.attraction:hover a {
+    color: #0077b6;
+}
+
 /* Footer styling */
 footer {
     margin-top: 30px;

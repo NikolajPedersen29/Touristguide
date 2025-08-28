@@ -14,6 +14,7 @@ public class TouristRepository {
     public TouristRepository() {
         attractions.add(new TouristAttraction( "Tivoli", "Forlystelsespark i København"));
         attractions.add(new TouristAttraction( "Den Lille Havfrue", "Berømt statue ved havnen"));
+        attractions.add(new TouristAttraction("Rundetårn", "Høj bygning i Københavns centrum"));
     }
 
     public List<TouristAttraction> getAllAttractions() {
