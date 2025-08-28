@@ -13,6 +13,7 @@ public class TouristRepository {
 
     public TouristRepository() {
         attractions.add(new TouristAttraction( "Tivoli", "Forlystelsespark i København"));
+        attractions.add(new TouristAttraction( "test123", "ny desc"));
         attractions.add(new TouristAttraction( "Den Lille Havfrue", "Berømt statue ved havnen"));
     }
 
